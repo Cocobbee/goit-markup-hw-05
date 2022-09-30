@@ -60,7 +60,7 @@
     <section class="motto-section">
       <div class="container">
         <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="main-button">Замовити послугу</button>
+        <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <!-- Section 2 features -->
@@ -113,14 +113,29 @@
         <h2 class="todo-title">Чим ми займаємося</h2>
         <ul class="todo-list">
           <li class="todo-item">
-            <img class="todo-img1" src="./images/things_to_do/img.jpg" alt="Кодуванням" width="370" height="294" />
+            <div class="img-box">
+              <img class="todo-img1" src="./images/things_to_do/img.jpg" alt="Кодуванням" width="370" height="294" />
+              <div class="img-description">
+                <h3 class="img-title">Десктопні додатки</h3>
+              </div>
+            </div>
           </li>
           <li class="todo-item">
-            <img class="todo-img2" src="./images/things_to_do/img1.jpg" alt="Створенням мобільних додатків" width="370"
-              height="294" />
+            <div class="img-box">
+              <img class="todo-img2" src="./images/things_to_do/img1.jpg" alt="Створенням мобільних додатків"
+                width="370" height="294" />
+              <div class="img-description">
+                <h3 class="img-title">Мобільні додатки</h3>
+              </div>
+            </div>
           </li>
           <li class="todo-item">
-            <img class="todo-img3" src="./images/things_to_do/img2.jpg" alt="Дизайном" width="370" height="294" />
+            <div class="img-box">
+              <img class="todo-img3" src="./images/things_to_do/img2.jpg" alt="Дизайном" width="370" height="294" />
+              <div class="img-description">
+                <h3 class="img-title">Дизайнерські рішення</h3>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -345,8 +360,17 @@
           </li>
         </ul>
       </div>
-      </div>
+    </div>
   </footer>
+  <!-- Modal window -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-btn" type="button" data-modal-close><svg class="close-icon" width="11" height="11">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg></button>
+    </div>
+  </div>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
